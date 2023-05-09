@@ -41,7 +41,7 @@ include 'header.php';
             echo "<tr>
                     <td>" . $param['id_pokemon'] ."</td>
                     <td>" . $param['nombre'] ."</td>
-                    <td> <img src=imagenes/" . strtoupper($param['tipo']) . ".jpg width='100em'></td>
+                    <td> <img src=img/type/" . strtoupper($param['tipo']) . ".jpg width='100em'></td>
                     <td><img src=" . $param['foto'] . "alt=" . $param['id_pokemon'] . "></td>";
         }
         ?>

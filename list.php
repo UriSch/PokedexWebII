@@ -27,7 +27,7 @@ mysqli_close($conn);
 
 include 'header.php';
 ?>
-<main>
+<main class="container-fluid mt-2">
     <?php
     if(isset($_GET['error'])){
         if($_GET['error'] != "")
@@ -35,15 +35,15 @@ include 'header.php';
     }
     ?>
     <table class="table">
-        <thead>
-            <tr>
+        <thead class="text-center">
+            <tr class="bg-warning text-white">
                 <th scope="col">ID Pokemon</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Foto</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="text-center">
             <?php
             foreach ($pokemonList as $pokemon){
                 echo "<tr>
@@ -59,4 +59,3 @@ include 'header.php';
 <?php
 include 'footer.php';
 ?>
-

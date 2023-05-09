@@ -10,11 +10,11 @@
         <header>
             <nav class="navbar bg-danger">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="index.php">
+                    <a class="navbar-brand text-white align-items-center" href="index.php">
                         <img src="https://www.pngall.com/wp-content/uploads/4/Pokeball-PNG-Free-Download.png" alt="Logo" width="50em" class="d-inline-block align-text-top">
                         Pokedex
                     </a>
-                    <form class="d-flex" role="search" method="post" enctype="application/x-www-form-urlencoded" action="buscador.php">
+                    <form class="d-flex" role="search" method="post" enctype="application/x-www-form-urlencoded" action="search.php">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="nombrePokemon" id="nombrePokemon">
                         <button class="btn bg-warning text-white" type="submit">Buscar</button>
                     </form>

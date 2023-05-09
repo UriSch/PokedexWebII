@@ -10,7 +10,7 @@ if(!$conn){
 }
 
 if(isset($_POST['nombrePokemon'])){
-    $sql = "SELECT * FROM pokemon WHERE nombre LIKE '%". $_POST['nombrePokemon'] ."%'";
+    $sql = "SELECT * FROM pokemon WHERE nombre LIKE '". $_POST['nombrePokemon'] ."'";
     $resultBusqueda = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($resultBusqueda) > 0) {

@@ -37,7 +37,7 @@ mysqli_close($conn);
         <header>
             <nav class="navbar bg-danger">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="#">
+                    <a class="navbar-brand text-white" href="index.php">
                         <img src="https://cdn-icons-png.flaticon.com/512/188/188940.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                         Pokedex
                     </a>

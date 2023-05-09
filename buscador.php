@@ -11,15 +11,11 @@ if(!$conn){
 
 if(isset($_POST['nombrePokemon'])){
     $sql = "SELECT * FROM pokemon WHERE nombre LIKE '". $_POST['nombrePokemon'] ."'";
-    $resultBusqueda = mysqli_query($conn, $sql);
+    $result = mysqli_query($conn, $sql);
 
-    if (mysqli_num_rows($resultBusqueda) > 0) {
-        // Mostrar los resultados
-        while ($fila = mysqli_fetch_assoc($resultBusqueda)) {
-            echo $fila['nombre'];
-        }
+    if (mysqli_num_rows($result) > 0) {
+        header('Location: pokemon.php?nombre=' . $_POST['nombrePokemon']);
     } else {
-        // No hay resultados
         header('Location: list.php?error=' . $_POST['nombrePokemon']);
     }
 }

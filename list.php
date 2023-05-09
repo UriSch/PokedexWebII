@@ -24,10 +24,8 @@ if (mysqli_num_rows($result) > 0) {
     }
 }
 mysqli_close($conn);
-
-include 'header.php';
 ?>
-<main class="container-fluid mt-2">
+<section class="container-fluid mt-2">
     <?php
     if(isset($_GET['error'])){
         if($_GET['error'] != "")
@@ -49,13 +47,10 @@ include 'header.php';
                 echo "<tr>
                     <td>" . $pokemon['id_pokemon'] ."</td>
                     <td>" . $pokemon['nombre'] ."</td>
-                    <td> <img src=imagenes/" . strtoupper($pokemon['tipo']) . ".jpg width='100em'></td>
+                    <td> <img src=img/type/" . strtoupper($pokemon['tipo']) . ".jpg width='100em'></td>
                     <td><img src=" . $pokemon['foto'] . "alt=" . $pokemon['id_pokemon'] . "></td>";
             }
             ?>
         </tbody>
     </table>
-</main>
-<?php
-include 'footer.php';
-?>
+</section>

@@ -16,7 +16,7 @@ if(isset($_POST['nombrePokemon'])){
     if (mysqli_num_rows($result) > 0) {
         header('Location: pokemon.php?nombre=' . $_POST['nombrePokemon']);
     } else {
-        header('Location: list.php?error=' . $_POST['nombrePokemon']);
+        header('Location: index.php?error=' . $_POST['nombrePokemon']);
     }
 }
 mysqli_close($conn);
